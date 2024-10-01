@@ -12,6 +12,7 @@ public class Vertex<T>
     public int InDegree { get; set; }
     public int OutDegree { get; set; }
     public int IdVertex {get; set;}
+    public List<Vertex<T>> Adjacent { get; set; } = new List<Vertex<T>>();
 
     public override string ToString()
     {
